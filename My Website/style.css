@@ -1,0 +1,151 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: beige;
+    color: black;
+    text-align: center;
+    align-items: center;
+    margin: 0;
+}
+.content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.hero {
+    padding: 60px 20px;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+    display: flex;
+}
+.hero h1 {
+    font-size: bolder;
+    color: soft peachpuff;
+    font-family: cursive, sans-serif;
+    font-style: italic;
+}
+.hero text {
+    flex: 1 1 300px;
+    min-width: 250px;
+    font-size: small;
+    margin: 10px;
+    align-items: center;
+    text-align: center;
+}
+.hero-image {
+    flex: 1 1 300px;
+    margin: 10px;
+}
+.hero image img {
+    width: 100%;
+    border-radius: 15px;
+}
+.logo {
+    width: 100px;
+    margin-bottom: 20px;
+    text-align: center;
+    text-align: center;
+    
+}
+.tagline {
+    font-size: 18px;
+  margin-top: 10px;
+  color: black;
+}
+.about {
+    margin-top: 15px;
+    font-size: 1rem;
+    color: black;
+}
+.gallery {
+    background-color: beige;
+    margin: 20px;
+    padding: 40px 20px;
+    border-radius: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+
+}
+.gallery img {
+    width: 100%;
+    height: auto;
+object-fit: cover;
+    border-radius: 10px;
+
+}
+.services {
+    margin: 30px 20px;
+    color: black;
+}
+.services h2 {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: beige;
+    border-radius: 20px;
+    font-size: bold;
+}
+.services ul {
+    margin-top: 10px;
+    font-size: 18px;
+    color: black;
+    padding: left;
+    list-style-type: none;
+    display: grid;
+    align-items: center;
+}
+.services li {
+    font-size: small;
+    margin-bottom: 8px;
+    color: black;
+}
+.contact {
+    background-color: soft pink;
+    padding: 40px 20px;
+    text-align: center;
+}
+.contact h2 {
+    font-family: cursive, sans-serif;
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+.contact-card {
+display: inline-block;
+background-color: blue;
+border-radius: 15px;
+max-width: 300px;
+}
+footer {
+    margin: 0;
+    text-align: left;
+    padding: 10px;
+    color: darkslategrey;
+}
+@media (max-width: 500px) {
+    .services ul {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media(max-width: 500px) {
+    .hero {
+        flex-direction: column;
+    }
+    .hero-text h1 {
+        font-size: 2rem;
+    }
+    .hero-text .about {
+        font-size: 0.95rem;
+    }
+    .services ul {
+        grid-template-columns: 1fr;
+    }
+    .contact-card {
+        width: 90%;
+        padding: 20px;
+    }
+    .contact h2 {
+        font-size: 1.6rem;
+    }
+}
+
