@@ -69,21 +69,29 @@ body {
 }
 .gallery {
     background-color: beige;
-    margin: 20px;
     padding: 40px 20px;
     border-radius: 20px;
     display: flex;
     flex-wrap: wrap;
     gap: 15px;
+    align-items: center;
     justify-content: center;
-
+}
+.gallery h2 {
+    text-align: center;
+    display: block;
+    width: 100%;
+    margin-bottom: 20px;
 }
 .gallery img {
-    width: 100%;
-    height: auto;
+    width: 200px;
+    height: 200px;
 object-fit: cover;
-    border-radius: 10px;
-
+    border-radius: 15px;
+    transition: all 0.3s ease;
+}
+.gallery img:hover {
+    transform: scale(1.05);
 }
 .about {
     text-align: center;
