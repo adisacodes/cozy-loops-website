@@ -113,6 +113,7 @@ object-fit: cover;
     max-width: 250px;
     flex: 1 1 200px;
     text-align: center;
+    transition: all 0.3s ease;
 }
 .services-content {
     display: flex;
@@ -127,6 +128,11 @@ object-fit: cover;
     object-fit: cover;
     border-radius: 10px;
     margin-bottom: 10px;
+}
+.service-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 20px rgba(0,0,0,0.2);
+    transition: all 0.3s ease;
 }
 .contact {
     background-color: soft pink;
