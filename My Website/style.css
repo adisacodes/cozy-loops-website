@@ -168,11 +168,44 @@ object-fit: cover;
     font-size: 2rem;
     margin-bottom: 20px;
 }
-.contact-card {
-display: inline-block;
-background-color: blue;
-border-radius: 15px;
-max-width: 300px;
+.contact-hero {
+    text-align: center;
+    padding: 60px 20px;
+    background-color: rosybrown;
+}
+.contact-form {
+display: flex;
+flex-wrap: wrap;
+gap: 20px;
+padding: 40px 60px;
+justify-content: flex-start;
+align-items: flex-start;
+}
+.form-card {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 450px;
+    padding: 30px;
+    background-color: whitesmoke;
+    flex: 1 1 300px;
+}
+.form-card input,
+.form-card textarea {
+    padding: 10px;
+    font-size: x-small;
+    width: 100%;
+    border: 2px solid peachpuff;
+}
+.form-card button {
+    padding: 10px 25px;
+    background-color: rosybrown;
+    color: black;
+    font-family: cursive,sans-serif;
+    cursor: pointer;
+}
+.form-card:last-child {
+    margin-top: 80px;
 }
 nav {
     display: flex;
@@ -203,9 +236,14 @@ nav ul li a:hover {
 }
 footer {
     margin: 0;
-    text-align: left;
+    text-align: center;
     padding: 10px;
-    color: darkslategrey;
+    color: black;
+    background-color: rosybrown;
+}
+footer a {
+    text-decoration: none;
+    color: blue;
 }
 @media (max-width: 500px) {
     .services ul {
